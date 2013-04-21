@@ -21,6 +21,6 @@ My journey included upgrading my version of xcode, reinstalling the xcode comman
 
 But no matter what I did, I was in a loop of installing libyaml, then reinstalling rubies, and then having rvm complain that I was missing libyaml libraries (psych). At one point I got through the ruby installation without an error, but when I created a rails4 project and did a bundle install, the first thing it complained about was a lack of the psych libyaml libraries.
 
-The eventual solution was to disregard what the error messages were saying (that you need to install libyaml) and instead I *uninstalled* libyaml. I set up rvm to enable autolibs, which is a feature that allows rvm to more directly manage dependencies on OSX. And then when I installed ruby *without* having libyaml installed, rvm was finally able to install libyaml where it wanted it.
+The eventual solution was to disregard what the error messages were saying (that you need to install libyaml) and instead I *uninstalled* libyaml. I set up rvm to [enable autolibs](https://rvm.io/rvm/autolibs/), which is a feature that allows rvm to more directly manage dependencies on OSX. And then when I installed ruby *without* having libyaml installed, rvm was finally able to install libyaml where it wanted it.
 
 I hope this can save you a little time.
